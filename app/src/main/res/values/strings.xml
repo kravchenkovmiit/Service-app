@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Service App</string>
+    <string name="app_ss_url">
+        <!--https://script.google.com/macros/s/###########/exec-->
+    </string>
+    <string name="main_btn_add_time">Add record</string>
+    <string name="main_btn_chk_car">Check car</string>
+    <string name="main_btn_add_train">Add new train</string>
+    <string name="chk_car_title">Check car:</string>
+    <string name="add_train_title">Add new train:</string>
+    <string name="chk_btn_chk_car">Check</string>
+    <string name="chk_btn_back">Back</string>
+    <string name="add_btn_add">Add</string>
+    <string name="app_version">1.2.0</string>
+
+</resources>

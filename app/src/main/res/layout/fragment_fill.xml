@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".FillFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fill_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/fill_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fill_date_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/fill_surname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/fill_surname_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Surname"
+                    android:inputType="none"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/fill_place_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/fill_place_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Place"
+                    android:inputType="none"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/fill_complaint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/fill_complaint_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type of complaint"
+                    android:inputType="none"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/fill_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Train in operation?"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/fill_train_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/fill_train_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Train"
+                    android:inputType="date"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fill_car_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/fill_car_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Car"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fill_entrance_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="22dp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/fill_entrance_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Entrance"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/fill_activity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/fill_activity_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type of activity"
+                    android:inputType="none"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/fill_description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/fill_description_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Short description"
+                    android:inputType="textMultiLine"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/fill_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/fill_comment_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comment"
+                    android:inputType="textMultiLine"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/fill_switch_add_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Add part"/>
+
+        <LinearLayout
+            android:id="@+id/fill_add_part_layout"
+            android:background="@color/peach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/fill_scan_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/fill_part_no_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Part no."
+                    android:inputType="textCapCharacters"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/fill_serial_no_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Serial no."
+                    android:inputType="number"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/fill_switch_add_drive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Add drive"/>
+
+            <LinearLayout
+                android:background="@color/peach"
+                android:id="@+id/fill_add_drive_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/fill_scan_drive_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/fill_drive_no_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Drive Part no."
+                        android:inputType="textCapCharacters"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/fill_drive_serial_no_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Drive Serial no."
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/fill_switch_add_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Fill in time"/>
+
+            <LinearLayout
+                android:id="@+id/fill_add_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/fill_travel_time_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Travel time"
+                        android:inputType="none"
+                        android:text="0:00:00"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/fill_arr_time_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Arrangment time"
+                        android:inputType="none"
+                        android:text="0:00:00"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/fill_working_time_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Working hours"
+                        android:inputType="none"
+                        android:text="0:00:00"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/fill_adm_time_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Administrative time"
+                        android:inputType="none"
+                        android:text="0:00:00"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/fill_warranty_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Warranty"
+                    android:inputType="none"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/report_chkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:hint="Подготовить отчет"
+                />
+
+            <CheckBox
+                android:id="@+id/rma_chkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:hint="Подготовить RMA"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/fill_chkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Не очищать форму"
+                />
+            <Button
+                android:id="@+id/fill_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fill_save_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not saved yet ..."
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="@color/gray"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

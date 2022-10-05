@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AddCarFragment">
+
+
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_train_title"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/black"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="25dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:id="@+id/train_prj_no_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/train_prj_no_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Project no."
+                        android:inputType="none"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_1_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Head car 1"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_2_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mid. car 1"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_3_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_3_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mid. car 2"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_4_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_4_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mid. car 3"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_5_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_5_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mid. car 4"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_6_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_6_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mid. car 5"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_7_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_7_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mid. car 6"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_car_8_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_car_8_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Head car 2"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:id="@+id/train_man_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/train_man_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Manufacturer"
+                        android:inputType="none"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/train_date_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+
+                        android:hint="Commissioning date"
+                        android:inputType="date"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:id="@+id/train_depot_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/train_depot_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Depot"
+                        android:inputType="none"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_comment_1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_comment_1_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Comment 1"
+                        android:inputType="textMultiLine"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/train_comment_2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/train_comment_2_etext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Comment 2"
+                        android:inputType="textMultiLine"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <Button
+                    android:id="@+id/train_add_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/add_btn_add"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/chk_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="left"
+                    android:visibility="gone"
+                    android:textColor="#363A43"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>
